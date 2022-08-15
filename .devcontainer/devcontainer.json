@@ -23,7 +23,7 @@
 		},
 		"eslint.enable": true,
 		"eslint.options": {
-			"overrideConfigFile": "src/.eslintrc.json"
+			"overrideConfigFile": "app/.eslintrc.json"
 		}
 	},
 	// Configure tool-specific properties.
