@@ -3,8 +3,13 @@ import { Stack } from '@mui/system';
 import React from 'react';
 
 import NavItem from './NavItem';
+import NavItemList from './NavItemList';
+
 
 export default function Header() {
+
+    const products = ["New", "Featured"];
+    const productsTo = ["/products/new", "/products/featured"];
 
     return (
         <header>
@@ -14,7 +19,7 @@ export default function Header() {
                     <Stack direction="row" spacing={2}>
                         <NavItem to="/" name="Home" />
                         <NavItem to="/about" name="About" />
-                        <NavItem to="/products" name="Products" />
+                        <NavItemList to="/products" name="Products" nameList={products} toList={productsTo} />
                     </Stack>
                 </Toolbar>
             </AppBar>

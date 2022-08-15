@@ -3,16 +3,16 @@ import PropTypes from 'prop-types';
 import React from 'react'
 import { NavLink } from 'react-router-dom';
 
+export const navLinkStyles = ({ isActive }) => {
+    return {
+        textDecoration: 'none',
+        color: isActive ? '#e6892d' : "white"
+    }
+}
+
 export default function NavItem(props) {
     const { to, name } = props;
 
-    const navLinkStyles = ({ isActive }) => {
-        return {
-            textDecoration: isActive ? 'none' : 'underline',
-            fontWeight: isActive ? 'bold' : 'normal',
-            color: 'white',
-        }
-    }
     return (
         <Typography variant="h5" component={NavLink} to={to} style={navLinkStyles}>
             {name}
