@@ -14,6 +14,7 @@ export default function Header() {
                     <Stack direction="row" spacing={2}>
                         <NavItem to="/" name="Home" />
                         <NavItem to="/about" name="About" />
+                        <NavItem to="/products" name="Products" />
                     </Stack>
                 </Toolbar>
             </AppBar>
