@@ -3,6 +3,7 @@ import React from 'react'
 import { Outlet } from 'react-router-dom'
 
 import FormProducts from './FormProducts'
+import ProductList from './ProductList'
 
 export default function Products() {
 
@@ -19,6 +20,7 @@ export default function Products() {
                 <Typography variant='h4'>
                     Products
                 </Typography>
+                <ProductList />
             </Box>
         </Box>
     )
