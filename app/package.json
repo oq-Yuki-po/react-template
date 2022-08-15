@@ -69,6 +69,7 @@
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-unused-imports": "^2.0.0",
     "prop-types": "^15.8.1",
+    "react-test-renderer": "^18.2.0",
     "webpack": "^5.74.0"
   }
 }
