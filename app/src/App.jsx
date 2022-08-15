@@ -1,3 +1,5 @@
+import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
+import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider'
 import React from 'react';
 import {
   Routes,
@@ -12,20 +14,21 @@ import FeatureProducts from './components/Products/Feature/FeatureProducts';
 import NewProducts from './components/Products/New/NewProducts';
 import Products from './components/Products/Products';
 
-
 function App() {
   return (
     <React.Fragment>
       <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="about" element={<About />} />
-        <Route path="products" element={<Products />}>
-          <Route path="new" element={<NewProducts />} />
-          <Route path="featured" element={<FeatureProducts />} />
-        </Route>
-        <Route path="*" element={<NoMatch />} />
-      </Routes>
+      <LocalizationProvider dateAdapter={AdapterDateFns}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="products" element={<Products />}>
+            <Route path="new" element={<NewProducts />} />
+            <Route path="featured" element={<FeatureProducts />} />
+          </Route>
+          <Route path="*" element={<NoMatch />} />
+        </Routes>
+      </LocalizationProvider>
     </React.Fragment>
   );
 }
