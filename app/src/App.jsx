@@ -13,6 +13,7 @@ import NoMatch from './components/NoMatch';
 import FeatureProducts from './components/Products/Feature/FeatureProducts';
 import NewProducts from './components/Products/New/NewProducts';
 import Products from './components/Products/Products';
+import Users from './components/Users/Users';
 
 function App() {
   return (
@@ -24,8 +25,9 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="products" element={<Products />}>
             <Route path="new" element={<NewProducts />} />
-            <Route path="featured" element={<FeatureProducts />} />
+            <Route path="feature" element={<FeatureProducts />} />
           </Route>
+          <Route path="users" element={<Users />} />
           <Route path="*" element={<NoMatch />} />
         </Routes>
       </LocalizationProvider>

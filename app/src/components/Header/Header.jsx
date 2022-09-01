@@ -9,7 +9,7 @@ import NavItemList from './NavItemList';
 export default function Header() {
 
     const products = ["New", "Featured"];
-    const productsTo = ["/products/new", "/products/featured"];
+    const productsTo = ["/products/new", "/products/feature"];
 
     return (
         <header>
@@ -20,6 +20,7 @@ export default function Header() {
                         <NavItem to="/" name="Home" />
                         <NavItem to="/about" name="About" />
                         <NavItemList to="/products" name="Products" nameList={products} toList={productsTo} />
+                        <NavItem to="/users" name="Users" />
                     </Stack>
                 </Toolbar>
             </AppBar>
