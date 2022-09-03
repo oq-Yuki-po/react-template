@@ -1,9 +1,10 @@
-import { Box, Typography } from '@mui/material'
 import React from 'react'
 import { Outlet } from 'react-router-dom'
 
-import FormProducts from './FormProducts'
-import ProductList from './ProductList'
+import { Box, Typography } from '@mui/material'
+
+import FormProducts from 'components/Products/FormProducts'
+import ProductList from 'components/Products/ProductList'
 
 export default function Products() {
 

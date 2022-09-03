@@ -1,9 +1,10 @@
-import { AppBar, Toolbar, Typography } from '@mui/material';
-import { Stack } from '@mui/system';
 import React from 'react';
 
-import NavItem from './NavItem';
-import NavItemList from './NavItemList';
+import { AppBar, Toolbar, Typography } from '@mui/material';
+import { Stack } from '@mui/system';
+
+import NavItem from 'components/Header/NavItem';
+import NavItemList from 'components/Header/NavItemList';
 
 
 export default function Header() {

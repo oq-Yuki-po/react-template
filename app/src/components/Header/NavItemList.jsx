@@ -1,7 +1,8 @@
-import { Typography, Menu, MenuItem } from '@mui/material';
-import PropTypes from 'prop-types';
 import React from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
+
+import { Typography, Menu, MenuItem } from '@mui/material';
+import PropTypes from 'prop-types';
 
 import { navLinkStyles } from './NavItem';
 
