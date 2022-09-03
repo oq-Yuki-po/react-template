@@ -29,10 +29,8 @@
                     "builtin",
                     "external",
                     "internal",
-                    [
-                        "parent",
-                        "sibling"
-                    ],
+                    "parent",
+                    "sibling",
                     "object",
                     "type",
                     "index"
@@ -47,12 +45,17 @@
                 },
                 "pathGroups": [
                     {
-                        "pattern": "@/components/common",
+                        "pattern": "{react,react-dom/**,react-router-dom}",
+                        "group": "builtin",
+                        "position": "before"
+                    },
+                    {
+                        "pattern": "components/**",
                         "group": "internal",
                         "position": "before"
                     },
                     {
-                        "pattern": "@/components/hooks",
+                        "pattern": "{recoil/atoms/**,recoil/selectors/**}",
                         "group": "internal",
                         "position": "before"
                     }
